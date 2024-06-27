@@ -1,0 +1,89 @@
+.card.card-custom > .card-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+}
+.card-header:first-child {
+    border-radius: calc(0.42rem - 1px) calc(0.42rem - 1px) 0 0;
+}
+.pl-4, .px-4 {
+    padding-left: 1rem !important;
+}
+.pr-4, .px-4 {
+    padding-right: 1rem !important;
+}
+.pb-3, .py-3 {
+    padding-bottom: 0.75rem !important;
+}
+.pt-3, .py-3 {
+    padding-top: 0.75rem !important;
+}
+.align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+.card-header {
+    padding: 2rem 2.25rem;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ECF0F3;
+}
+.flex-grow-1 {
+    -webkit-box-flex: 1 !important;
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important;
+}
+.card.card-custom > .card-body {
+    padding: 2rem 2.25rem;
+}
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 2.25rem;
+}
+.scroll.scroll-pull {
+    padding-right: 12px;
+    margin-right: -12px;
+}
+.scroll {
+    position: relative;
+    overflow: hidden;
+}
+.ps {
+    overflow: hidden !important;
+    overflow-anchor: none;
+    -ms-overflow-style: none;
+    touch-action: auto;
+    -ms-touch-action: auto;
+}
+.card.card-custom > .card-footer {
+    background-color: transparent;
+}
+.card-footer:last-child {
+    border-radius: 0 0 calc(0.42rem - 1px) calc(0.42rem - 1px);
+}
+.align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+.card-footer {
+    padding: 2rem 2.25rem;
+    background-color: #ffffff;
+    border-top: 1px solid #ECF0F3;
+}

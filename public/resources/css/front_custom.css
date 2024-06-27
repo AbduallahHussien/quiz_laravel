@@ -1,0 +1,211 @@
+
+/* 
+    Created on : Jan 7, 2021, 9:20:53 PM
+    Author     : Sara Abo Elyazeid
+*/
+.set_language{
+    text-decoration: none !important;
+    margin: 0px 10px;
+}
+
+.profile-usermenu ul li.active a,.table .thead-clr th{
+    background-color: #077ec1;
+}
+.profile-userpic img{
+    border: 2px solid #226fc0;
+}
+.subject-list h4,.quiz-test h4,.heading-clr{
+    color: #226fc0;
+}
+.btn-active{
+    background-color: #5bc995;
+}
+.btn-primary{
+    background-color: #054d8a;
+}
+.profile-usermenu ul li a{
+    color: rgb(43,70,255);
+}
+.btn-warning{
+    background-color: rgb(255,239,188);
+}
+.btn-success,.btn-save{
+    background-color: #5bc995;
+}
+#subheader_mobile_toggle,#close_sidebar_container{
+    display: none;
+}
+#close_sidebar i{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.burger-icon{
+    margin-right: 1.5rem;
+}
+.rtl_ar .burger-icon{
+    margin-right: 0rem;
+    margin-left: 1.5rem;
+}
+.social_links i {
+    font-size: 1.5rem !important;
+    color: #5d78ff !important;
+}
+.name_container{
+    margin-top: 0.5rem !important;
+}
+.links_container{
+    margin: 10px 0px;
+}
+.social_links{
+    text-decoration: none !important;
+    margin: 0px 4px;
+}
+.special_course_btn{
+    margin-top: 30px;
+}
+.enroll_un_btn{
+    float: right;
+}
+.rtl_ar .enroll_un_btn{
+    float: left;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .subject_name{
+        font-size: 13px;
+    }
+    .social_links i{
+        font-size: 1rem !important;
+    }
+    .space_div{
+        display: none;
+    }
+    .subject_img{
+        width: 100px;
+    }
+     .special_course_btn{
+        margin-top: 20px;
+    }
+    .complete_course_btn{
+        font-size: 1rem;
+    }
+    .comments_f_header{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .profile-sidebar_container{
+        display: none;
+        margin-bottom: 10px;
+    }
+    #subheader_mobile_toggle,#close_sidebar_container{
+        display: inline-block;
+    }
+    .logout-btn{
+        margin-top: -10px;
+    }
+    .complete_course_btn{
+        font-size: 0.75rem;
+    }
+    .comments_f_header{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    .subject_img{
+        width: 70px;
+    }
+    .special_course_btn{
+        margin-top: 12px;
+    }
+    .complete_course_btn{
+        font-size: 0.6rem;
+    }
+    
+}
+
+@media screen and (max-width: 390px) {
+    .subject_img{
+        width: 70px;
+    }
+    .name_container{
+        margin-top: 0rem !important;
+    }
+    .social_links{
+        margin: 0px 2px;
+    }
+    .subject_name{
+        font-size: 11px;
+    }
+    .social_links i{
+        font-size: 0.75rem !important;
+    }
+    .links_container{
+        margin: 0px;
+    }
+    .special_course_btn{
+        margin-top: 8px;
+    }
+    .comments_f_header{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    .profile-sidebar_container{
+        display: none;
+        margin-bottom: 10px;
+    }
+    #subheader_mobile_toggle,#close_sidebar_container{
+        display: inline-block;
+    }
+    .logout-btn{
+        margin-top: -10px;
+    }
+    .burger-icon{
+        margin-right: 0.2rem;
+    }
+    .rtl_ar .burger-icon{
+        margin-right: 0rem;
+        margin-left: 0.2rem;
+    }
+    .logo_container{
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    .rtl_ar .logo_container{
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+
+    .menu-container{
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+    .rtl_ar .menu-container{
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+    .complete_course_btn{
+        width: 40% !important;
+    }
+}
+
+@media screen and (max-width: 341px) {
+    .subject_img{
+        width: 60px;
+    }
+    .subject_name{
+        font-size: 10px;
+    }
+    .social_links i{
+        font-size: 0.5rem !important;
+    }
+    .special_course_btn{
+        margin-top: 5px;
+    }
+    
+}

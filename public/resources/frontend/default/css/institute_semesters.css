@@ -1,0 +1,36 @@
+.course-box .course-details{
+        padding: 15px 10px 3px 15px;
+}
+.btn-pill{
+        border-radius: 2rem;
+}
+.registered{
+    background-color: #0f334a !important;
+    cursor: default !important;
+}
+.course-box {
+    background: #f7f8fa;
+}
+.btn-danger{
+    border-color: #dc3545 !important;
+    background-color: #dc3545 !important;
+}
+.instructors{
+    padding-left: 20px;
+}
+.rtl .instructors{
+    padding-right: 20px;
+    padding-left: 0px;
+}
+.already_enrolled_txt{
+    float: right;
+    padding-left: 5px;
+    border-left: 2px solid #ccc;
+}
+.rtl .already_enrolled_txt{
+    float: left;
+    padding-right: 5px;
+    border-right: 2px solid #ccc;
+    padding-left: 0px;
+    border-left: none;
+}

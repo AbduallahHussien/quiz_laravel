@@ -1,0 +1,27 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');*/
+@font-face {
+    font-family: 'Almarai';
+    src: url('../fonts/Almarai-Regular.woff2') format('woff2'),
+        url('../fonts/Almarai-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Almarai-bold';
+    src: url('../fonts/almarai-bold-700.woff2') format('woff2'),
+        url('../../fonts/almarai-bold-700.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  background: #F1F3FA;
+  /*font-family: 'Cairo', sans-serif;*/
+  font-family: Almarai !important;
+  font-size: 16px;
+}
+.profile-usermenu ul li a i {
+    margin-right: 8px;
+    margin: 0px 7px;
+    font-size: 14;
+}

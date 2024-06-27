@@ -3,51 +3,21 @@
 namespace App\Http\Controllers\Public;
 
 use App\Http\Controllers\Controller;
-use App\Domains\Paintings\Services\PaintingsService;
-use App\Domains\Categories\Services\CategoriesService;
-use App\Domains\Artists\Services\ArtistsService;
-use App\Domains\Blogs\Services\PostsService;
-use App\Domains\Locations\Services\LocationsService;
-use App\Domains\Colors\Services\ColorsService;
-use App\Domains\Styles\Services\StylesService;
-use App\Domains\Slides\Services\SlidesService;
 use Illuminate\Http\Request;
-use App\Domains\Settings\Interfaces\SettingsRepositoryInterface;
 use Session;
+use App\Helpers\CommonHelper;
 
 class HomePageController extends Controller
 {
-    protected $paintings_service; 
-    protected $permission_service;
-    protected $categories_service; 
-    protected $posts_service; 
-    protected $locations_service; 
-    protected $colors_service; 
-    protected $styles_service; 
-    protected $artists_service; 
-    protected $slides_service; 
-    private $settings_respository;
+
+    // private $settings_respository;
     public function __construct( 
-        PaintingsService $paintings_service,
-        CategoriesService $categories_service,
-        PostsService $posts_service,
-        LocationsService $locations_service,
-        ColorsService $colors_service,
-        StylesService $styles_service,
-        ArtistsService $artists_service,
-        SlidesService $slides_service,
-        SettingsRepositoryInterface $settings_respository
+      
+        // SettingsRepositoryInterface $settings_respository
      )
     {
-        $this->paintings_service       = $paintings_service;
-        $this->categories_service      = $categories_service;
-        $this->posts_service           = $posts_service;
-        $this->locations_service       = $locations_service;
-        $this->colors_service          = $colors_service;
-        $this->styles_service          = $styles_service;
-        $this->artists_service         = $artists_service;
-        $this->slides_service          = $slides_service;
-        $this->settings_respository = $settings_respository;
+     
+        // $this->settings_respository = $settings_respository;
     }
     /**
      * Display a listing of the resource.
@@ -56,25 +26,13 @@ class HomePageController extends Controller
      */
     public function index()
     {
-        $banners           =  $this->paintings_service->getPaintings(true, 3);
-        $products          =  $this->paintings_service->getPaintings(true, 5);
-        $featured_artist   =  $this->artists_service->featuredArtist(true, 8);
-        $artist_categories =  $this->artists_service->artistCategories();
-        $posts             =  $this->posts_service->featuredPosts(3);
-        $slides            =  $this->slides_service->homeSlides();
+        $page_name = "home";
+        $page_title = __('home');
 
-        return view('public.home', compact('banners','products','featured_artist','artist_categories','posts','slides'));
+        return view('frontend.'. get_frontend_settings('theme') .'.index', compact('page_name','page_title'));
     }
     
-    public function site_lang(Request $request)
-    {
-        \Session::put('language', $request->lang);
-        $this->settings_respository->update_settings('language',$request->lang);  
-
-
-        return jsonResponse(['data'=>''],200,'');
-
-    }
+   
 
 
     /**

@@ -20,17 +20,17 @@ class Language
      */
     public function handle(Request $request, Closure $next)
     {
-        $settings =  settings();
-        if (Auth::guard('web')->check()) {
-            Session::put('applocale',$settings['language']);
-        }else{
-            if(session()->has('language')){
-                Session::put('applocale',session('language'));
-            }else{
-                Session::put('applocale','en');
-            }
-        }
-        if (Session::has('applocale') ) { App::setLocale(Session::get('applocale')); }
+        // $settings =  settings();
+        // if (Auth::guard('web')->check()) {
+        //     Session::put('applocale',$settings['language']);
+        // }else{
+        //     if(session()->has('language')){
+        //         Session::put('applocale',session('language'));
+        //     }else{
+        //         Session::put('applocale','en');
+        //     }
+        // }
+        // if (Session::has('applocale') ) { App::setLocale(Session::get('applocale')); }
         return $next($request);
     }
 }

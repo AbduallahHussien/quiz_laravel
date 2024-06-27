@@ -1,0 +1,123 @@
+.img-fluid{
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border: 3px solid white;
+    max-width: 100%;
+}
+.img_container{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.rtl .img-fluid{
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 0%;
+    border: 3px solid white;
+}
+.rtl .img_container{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+}
+
+.course-box-2 {
+    background-color: #f7f8fa;
+    border: none;
+    display: inline-block;
+    width: 70%;
+}
+.section-wrapper__title {
+    align-items: baseline;
+    display: flex;
+    font-size: 33px;
+    justify-content: space-between;
+}
+
+.section-wrapper__title-line {
+    height: 1px;
+    width: 60%;
+    margin: 0 15px;
+    position: relative;
+    top: -6px;
+    background: #bdbdbd;
+}
+.section-wrapper__title-icon {
+    height: 30px;
+    background-size: cover;
+    margin-left: 5px;
+}
+i.primary-base {
+    background: #0BA7AA;
+}
+.inner_container{
+    margin-left: 20px;
+    /*padding-left: 3rem!important;*/
+}
+.rtl .inner_container{
+    margin-right: 20px;
+    /*padding-right: 3rem!important;*/
+}
+.container{
+    border-left: 2px solid #ccc;
+}
+.rtl .container{
+    border-right: 2px solid #ccc;
+    border-left: none;
+}
+.course-box-2 .course-image {
+    width: auto !important; 
+}
+/*.img-fluid{
+    height: 220px;
+}*/
+.certificate-btn-wrapper {
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+.action-btn {
+    width: 100%;
+    border-radius: 5px;
+}
+.disabled {
+    opacity: .65;
+}
+.disabled {
+    /*pointer-events: none;*/
+    background: #b3dedf !important;
+    border: none;
+    /*cursor: not-allowed;*/
+}
+.cert_title {
+    display: block;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    /*color: #24343f;*/
+
+}
+.disabled .cert_title{
+    color: #24343f;
+}
+.bg-danger .cert_title{
+    color: #bdbdbd;
+}
+.bg-danger{
+    background-color: #dc3545!important;
+}
+#certificates-section{
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.btns_container{
+    height: 40px;
+}
+.img-fluid {
+    height: 100%;
+}
